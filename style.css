@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    height: 98vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sidebar {
+    background-image: url(/assets/music-background.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 35%;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+}
+
+.credit {
+    padding-bottom: 1rem;
+}
+
+.credit a {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    flex: 1;
+}
+
+.middle {
+    flex: 1;
+}
+
+.bottom {
+    flex: 1
+}
