@@ -54,6 +54,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: 15px;
+    box-shadow: 3px gray;
 }
 
 form {
@@ -69,7 +70,10 @@ form {
 }
 
 .bottom {
-    flex: 1
+    flex: 1;
+    padding-left: 30px;
+    padding-top: 27px;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .input {
@@ -92,4 +96,23 @@ input:focus {
 
 input:invalid {
     border-color: red;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: hsl(0, 8%, 45%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.login a {
+    color:hsl(0, 8%, 45%);
+    text-decoration: none;
+}
+
+.login {
+    font-weight: bold;
 }
