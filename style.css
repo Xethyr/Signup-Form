@@ -42,7 +42,6 @@ body {
     font-size: 1.5rem;
     padding-left: 30px;
     padding-top: 100px;
-    border: 1px solid red;
     background-color: hsl(0, 0%, 95%);
     padding-right: 20%;
 }
@@ -50,14 +49,18 @@ body {
 .middle {
     flex: 1;
     padding-left: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 25px;
+    gap: 15px;
 }
 
 form {
     flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 60%;
 }
 
 .do-this {
@@ -67,4 +70,26 @@ form {
 
 .bottom {
     flex: 1
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    max-width: 200px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+
+input:invalid {
+    border-color: red;
 }
